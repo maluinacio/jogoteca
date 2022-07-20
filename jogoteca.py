@@ -8,4 +8,7 @@ lista = ['Detroid Become Human', 'Resident Evil Village', 'uncharted the lost le
 def ola():
     return render_template('lista.html', titulo='Meus Jogos', jogos = lista)
 
+@app.route('/novo')
+def novo():
+    return render_template('novo.html', titulo= 'Novo Jogo')
 app.run()
